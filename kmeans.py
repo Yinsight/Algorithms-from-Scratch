@@ -99,7 +99,6 @@ if __name__ == '__main__':
     dataset = load_csv(filepath)
     # remove header
     dataset.pop(0)
-    # convert into float
     for i in range(len(dataset[0])):
         str_column_to_float(dataset, i)
     y = np.array(get_label(dataset))
